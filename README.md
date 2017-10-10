@@ -5,6 +5,7 @@
 #### Pseudocodigo Cifrado
     1. INICIO
     2. Ingresar "Frase"
+    2. Inicializamos una variable donde almacenara temporalmente el codigo ASCII
     3. Recorremos cada letra de la frase ingresada con For(i)
     4. Convertiremos cada letra de la frase ingresada a código Ascci
     5. Validaremos si cada letra de la frase es mayúscula o minúscula
