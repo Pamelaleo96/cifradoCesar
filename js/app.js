@@ -1,7 +1,8 @@
 //Ingresaremos una frase
 var phrase = prompt("Ingresa una frase");
 //variable donde estara almacenado temporalmente el nuevo numero ascii encriptado
-var codAsciiEncrypted = 0;
+var codAsciiEncrypted = 0;  
+
 //VALIDAMOS QUE SE INGRESE LA FRASE y Mostramos mediante un alert los resultados.
 if(phrase){
     /*llamamos a la funcion decipher esta pide la frase cifrada y el espaciado para eso en el primer parametro
@@ -12,7 +13,7 @@ if(phrase){
     else{
     alert("No se ingreso la frase");
     }
-
+ 
 //crear una función de cifrado(Cipher)
 function cipher(phrase, space){
     //variable donde se almacenara la frase encriptada
@@ -41,9 +42,11 @@ function cipher(phrase, space){
             phraseCipher += asciitoLetter;
         }
         else{
+            //Si la frase ingresada contiene numeros enviar un alert
             return alert("La frase ingresada contiene números");
           }
     }
+    //Por ultimo retornamos la nueva frase encriptada
     return phraseCipher;
     }
 //cipher(phrase, 33);
