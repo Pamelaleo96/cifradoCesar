@@ -44,6 +44,11 @@ function cipher(phrase, space){
 cipher(phrase, 33);
 console.log(cipher(phrase,33));
 
+function decipher(phrase, space){
+    
+    return;
+}
+decipher(phrase, 33);
 
 
 
