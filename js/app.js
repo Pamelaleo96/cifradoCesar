@@ -35,6 +35,11 @@ function cipher(phrase, space){
                     //codAsciiEncrypted: Guardamos el código ascii encriptado
                     codAsciiEncrypted = (convertLettertoAscii - 97 + space) % 26 + 97;
                     }
+                    //valido si es hay un espacio y lo igualo
+                    //con su respectivo ASCII 
+                    if(convertLettertoAscii==32){
+                        codAsciiEncrypted=32;
+                    }
 
             //Convertiremos "codAsciiEncrypted" a letra
             var asciitoLetter = String.fromCharCode(codAsciiEncrypted);
@@ -70,6 +75,10 @@ function decipher(phraseCipher, space){
                 //Si la letra es minúscula Aplicaremos la formula de César para obtener el código ASCII de la letra ya encriptada
                 //codAsciiEncrypted: Guardamos el código ascii encriptado
                 codAsciiEncrypted = (convertLettertoAscii + 85 - space) % 26 + 97;
+                }
+                //valido si es un espacio y lo convierto a espacio ASCII
+                if(convertLettertoAscii==32){
+                    codAsciiEncrypted=32;
                 }
         //Convertiremos "codAsciiEncrypted=contiene el codigo Ascii encriptado" a letra
         var asciitoLetter= String.fromCharCode(codAsciiEncrypted);
